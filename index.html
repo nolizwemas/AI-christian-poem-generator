@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
 <header>
 <h1> AI Christian Poem Generator</h1>
 </header>
@@ -14,10 +15,10 @@
 
 
 <main>
-<input type="text" placeholder="Enter the topic of the Christian poem" autofocus required/>
-<input type="submit"/>
-
-<div>
+<form><input type="text" placeholder="Enter the topic of the Christian poem" autofocus required autocomplete="off" class="instructions"/>
+<input type="submit" class="submit-button"/>
+</form>
+<div class="poem">
 The poem will go here
     <br/>
 The poem will go here
@@ -28,8 +29,12 @@ The poem will go here
 
 
 
-<footer>This AI project was coded by <a href="https://github.com/nolizwemas" target="_blank" >Nolizwe Masondo</a> and is <a href="https://github.com/nolizwemas/AI-christian-poem-generator.git" target="_blank" >open-sourced on gitHub</a> and <a href="ai-christian-poem-generator.netlify.app" target="_blank" >hosted by Netlify</a></footer>
+<footer>This AI project was coded by 
+    <a href="https://github.com/nolizwemas" target="_blank">Nolizwe Masondo</a>
+     and is <a href="https://github.com/nolizwemas/AI-christian-poem-generator.git" target="_blank" >
+        open-sourced on gitHub</a> and <a href="ai-christian-poem-generator.netlify.app" target="_blank" >hosted by Netlify</a></footer>
 
+</div>
     <script src="index.js"></script>
 </body>
 </html>
