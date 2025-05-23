@@ -14,7 +14,7 @@ function generatePoem(event) {
 
      let instructionsInput = document.querySelector("#user-instructions");
     let apiKey = "4d50fa0b4fo9407f4bc4tc0a244ca33d";
-    let context = "You are a very poetic AI assistant who provides the most beautiful 150 word Christian poems about topics in the Holy Bible";
+    let context = "You are a very poetic AI assistant who provides the most beautiful 150 word Christian poems about topics in the Holy Bible. Separate each line with a <br />. Make sure to follow the user instructions.";
     let prompt = `User instructions: Generate a Christian poem ${instructionsInput.value}`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
     
